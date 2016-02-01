@@ -2,6 +2,7 @@
 ## functions do
 
 ## Write a short comment describing this function
+# added this comment just to see if GitHub Desktop works
 
 makeCacheMatrix <- function(x = matrix()) {
 
