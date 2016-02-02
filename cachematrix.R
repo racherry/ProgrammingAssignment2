@@ -1,5 +1,6 @@
 ## Overall description
 #   The functions allow you to create the inverse of a matrix and cache the inverse for retrieval
+#   Makes use of <<- to assign variables in the parent environment
 #   Output of makeCacheMatric can be passed to cacheSolve
 #   Example of how to use it:
 #     testmatrix <- matrix(c(5,6,7,8),nrow=2,ncol=2)
@@ -16,8 +17,8 @@
 makeCacheMatrix <- function(x=matrix()){
   i <- NULL
   set <- function(y) {
-    x <<- y
-    i <<- NULL
+    x <<- y 
+    i <<- NULL 
   }
   get <- function() x
   setinverse <- function(inverse) i <<- inverse
